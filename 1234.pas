@@ -1,11 +1,10 @@
-﻿program z3;
-var a,b,c,x:real;
-begin 
-  Writeln('Введите 1й катет');
-  read(a);
-  Writeln('Введите 2й катет');
-  read(b);
-  x:=sqr(a)+sqr(b);
-  c:=sqrt(x);
-  write('Гипотенуза = ',c);
+﻿var a,b,c,k:integer;
+begin
+writeln('введите три числа');
+readln(a,b,c);
+k:=0;
+if a>0 then k:=k+1;
+if b>0 then k:=k+1;
+if c>0 then k:=k+1;
+write('кол-во положительных чисел =',k)
 end.
